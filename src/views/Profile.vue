@@ -1,16 +1,17 @@
 <template>
   <div class="profile">
-    <p>Hello {{ user.first_name }}</p>
-    <img v-bind:src="user.image_url" :alt="user.id" />
+    <h1>Hello, {{ user.first_name }}</h1>
+    <br />
+    <img v-bind:src="user.image_url" v-bind:alt="user.image_url" />
     <div>
-      <div v-for="space in spaces" :key="space.id">
+      <!-- <div v-for="space in spaces" :key="space.id">
         <p>{{ spaces.address }}</p>
         <hr />
-      </div>
+      </div> -->
       <!-- <h1>{{ user.first_name }} {{ user.last_name }}</h1> -->
       <!-- <div v-for="booking in bookings" :key="booking.id">
       {{ user.bookings }} -->
-      <hr />
+      <!-- <hr /> -->
     </div>
     <b>Bookings:</b>
     {{ user.bookings.spaces }}
@@ -18,6 +19,13 @@
     <!-- <button v-on:click="updateBooking()">Update Booking Details</button> -->
   </div>
 </template>
+
+<style>
+img {
+  height: 300px;
+  width: 500px;
+}
+</style>
 
 <script>
 import axios from "axios";
