@@ -2,7 +2,9 @@
   <div class="spacesshow">
     <h2>{{ space.address }}</h2>
     <br />
-    <img v-bind:src="space.image_url" />
+    <img v-bind:src="space.image_url" v-bind:alt="space.address" />
+    <br />
+    <p>{{ space.description }}</p>
     <br />
     <router-link to="/">Website</router-link>
     <!-- v-bind:alt="space.address" -->

@@ -1,10 +1,10 @@
 <template>
   <div class="profile">
-    <img v-bind:src="user.image_url" :alt="user.id" />
     <p>Hello {{ user.first_name }}</p>
+    <img v-bind:src="user.image_url" :alt="user.id" />
     <div>
       <div v-for="space in spaces" :key="space.id">
-        <p>{{ space.address }}</p>
+        <p>{{ spaces.address }}</p>
         <hr />
       </div>
       <!-- <h1>{{ user.first_name }} {{ user.last_name }}</h1> -->
@@ -33,6 +33,8 @@ export default {
   created: function () {
     this.isLoggedIn();
     this.profileUser();
+    this.bookSpace();
+    this.showBookings();
   },
   // mounted: function () {
   //   this.showBooking();
@@ -51,7 +53,13 @@ export default {
         this.$router.push("/login");
       }
     },
-    showBooking: function () {
+    bookSpace: function () {
+      axios.get("/bookings/" + this.space_id).then((response) => {
+        this.userBookings = response.data.space;
+        console.log("Success", response.data);
+      });
+    },
+    showBookings: function () {
       axios.get("/users/" + this.user_id).then((response) => {
         this.userBookings = response.data.bookings;
         console.log("Success", response.data);

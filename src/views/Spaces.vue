@@ -2,13 +2,23 @@
   <div class="Spaces">
     <h1>All Spaces</h1>
     <div v-for="space in spaces" v-bind:key="space.id">
+      <br />
       <h2>{{ space.address }}</h2>
+      <br />
       <img v-bind:src="space.image_url" v-bind:alt="space.address" />
+      <br />
       <br />
       <router-link v-bind:to="`/spaces/${space.id}`">More details</router-link>
     </div>
   </div>
 </template>
+
+<style>
+img {
+  height: 400px;
+  width: 500px;
+}
+</style>
 
 <script>
 import axios from "axios";
