@@ -2,8 +2,14 @@
   <div>
     <div>
       <div class="Spaces">
+        <br />
+        <br />
+        <br />
+        <br />
         <div v-for="space in spaces" v-bind:key="space.id">
           <br />
+          <br />
+
           <h2>{{ space.address }}</h2>
           <br />
           <img v-bind:src="space.image_url" v-bind:alt="space.address" />

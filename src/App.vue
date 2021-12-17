@@ -101,10 +101,10 @@
             <div class="col-lg-2 col-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                <li>
+                <!-- <li>
                   <i class="bi bi-chevron-right"></i>
-                  <a href="#">Home</a>
-                </li>
+                  <a href="/about">Home</a>
+                </li> -->
                 <li>
                   <i class="bi bi-chevron-right"></i>
                   <a href="/spaces">Spaces</a>

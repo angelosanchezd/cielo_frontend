@@ -1,8 +1,13 @@
 <template>
   <div class="spacesshow">
+    <br />
+    <br />
+    <br />
+    <br />
     <h2>{{ space.address }}</h2>
     <br />
     <img v-bind:src="space.image_url" v-bind:alt="space.address" />
+    <br />
     <br />
     <p>{{ space.description }}</p>
     <br />
@@ -13,6 +18,13 @@
     <br />
     <!-- <button v-on:click="destroySpace(space)">Delete Space</button> -->
     <router-link to="/spaces">Back to All Spaces</router-link>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 </template>
 
