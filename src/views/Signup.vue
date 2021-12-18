@@ -1,6 +1,11 @@
 <template>
   <div class="signup">
     <form v-on:submit.prevent="submit()">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <h1>Signup</h1>
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
@@ -16,8 +21,13 @@
       </div>
       <br />
       <div>
+        <label>Image URL:</label>
+        <input type="text" v-model="newUserParams.image_url" />
+      </div>
+      <br />
+      <div>
         <label>Birthday:</label>
-        <input type="email" v-model="newUserParams.birthday" />
+        <input type="text" v-model="newUserParams.birthday" />
       </div>
       <br />
       <div>
@@ -37,6 +47,26 @@
       <br />
       <input type="submit" value="Submit" />
     </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 </template>
 
@@ -56,7 +86,7 @@ export default {
         .post("/users", this.newUserParams)
         .then((response) => {
           console.log(response.data);
-          this.$router.push("/login");
+          this.$router.push("/profile");
         })
         .catch((error) => {
           this.errors = error.response.data.errors;

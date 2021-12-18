@@ -3,7 +3,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="/" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="" />
           <span>Cielo</span>
         </a>
@@ -85,17 +85,17 @@
         <div class="container">
           <div class="row gy-4">
             <div class="col-lg-5 col-md-12 footer-info">
-              <a href="index.html" class="logo d-flex align-items-center">
+              <a href="/" class="logo d-flex align-items-center">
                 <img src="assets/img/logo.png" alt="" />
                 <span>Cielo</span>
               </a>
 
-              <div class="social-links mt-3">
+              <!-- <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
                 <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> -->
             </div>
 
             <div class="col-lg-2 col-6 footer-links">

@@ -42,7 +42,7 @@
                   CIELo = "Collaboration in Every Location".
                   <br />
                   Find connections and helpful resources all provided by the office spaces in your area. Login, book,
-                  work. It's that easy (or it will be.)
+                  work. It's that easy.
                 </h2>
                 <!-- <p>
                   Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur

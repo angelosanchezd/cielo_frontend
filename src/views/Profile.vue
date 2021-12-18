@@ -1,5 +1,15 @@
 <template>
   <div class="profile">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <h1>Hello, {{ user.first_name }}</h1>
     <br />
     <img v-bind:src="user.image_url" v-bind:alt="user.image_url" />
@@ -13,6 +23,11 @@
       {{ user.bookings }} -->
       <!-- <hr /> -->
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <b>Bookings:</b>
     {{ user.bookings.spaces }}
     <br />

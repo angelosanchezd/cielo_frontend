@@ -6,6 +6,11 @@
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
       <div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         Address:
         <input type="text" v-model="newSpaceParams.address" />
       </div>

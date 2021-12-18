@@ -1,10 +1,15 @@
 <template>
   <div class="login">
     <form v-on:submit.prevent="submit()">
-      <h1>Login</h1>
+      <!-- <h1>Login</h1> -->
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div>
         <label>Email:</label>
         <input type="email" v-model="newSessionParams.email" />
@@ -16,6 +21,37 @@
       </div>
       <br />
       <input type="submit" value="Submit" />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </form>
   </div>
 </template>
