@@ -1,7 +1,10 @@
 <template>
   <div>
     <div>
-      <div class="Spaces">
+      <div class="Spaces" id="alignment-id">
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <br />
@@ -12,7 +15,7 @@
 
           <h2>{{ space.address }}</h2>
           <br />
-          <img v-bind:src="space.image_url" v-bind:alt="space.address" />
+          <img v-bind:src="space.image_url" v-bind:alt="space.address" v-bind:class="space.center" />
           <br />
           <br />
           <router-link v-bind:to="`/spaces/${space.id}`">More details</router-link>
@@ -24,8 +27,18 @@
 
 <style>
 img {
-  height: 400px;
-  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#alignment-id {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 </style>
 
