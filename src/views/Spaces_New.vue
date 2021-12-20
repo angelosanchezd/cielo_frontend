@@ -1,16 +1,21 @@
 <template>
   <div class="spacesnew">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <h1>New Space</h1>
     <form v-on:submit.prevent="createSpace()">
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
       <div>
+        <!-- <br />
         <br />
         <br />
         <br />
-        <br />
-        <br />
+        <br /> -->
         Address:
         <input type="text" v-model="newSpaceParams.address" />
       </div>
@@ -21,7 +26,7 @@
       </div>
       <br />
       <div>
-        Image:
+        Image URL:
         <input type="text" v-model="newSpaceParams.image_url" />
       </div>
       <br />

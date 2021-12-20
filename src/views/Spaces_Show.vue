@@ -4,6 +4,8 @@
     <br />
     <br />
     <br />
+    <br />
+    <br />
     <h2>{{ space.address }}</h2>
     <br />
     <img v-bind:src="space.image_url" v-bind:alt="space.address" />
