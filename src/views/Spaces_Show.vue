@@ -1,5 +1,5 @@
 <template>
-  <div class="spacesshow">
+  <div class="spacesshow" id="alignment-id">
     <br />
     <br />
     <br />

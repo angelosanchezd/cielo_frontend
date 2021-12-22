@@ -1,5 +1,5 @@
 <template>
-  <div class="signup">
+  <div class="signup" id="alignment-id">
     <form v-on:submit.prevent="submit()">
       <br />
       <br />

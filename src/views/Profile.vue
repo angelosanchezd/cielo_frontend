@@ -1,5 +1,6 @@
 <template>
-  <div class="profile">
+  <div class="profile" id="alignment-id">
+    >
     <br />
     <br />
     <br />
@@ -37,8 +38,18 @@
 
 <style>
 img {
-  height: 300px;
-  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#alignment-id {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 </style>
 

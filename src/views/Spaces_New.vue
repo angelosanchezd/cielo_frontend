@@ -1,5 +1,5 @@
 <template>
-  <div class="spacesnew">
+  <div class="spacesnew" id="alignment-id">
     <br />
     <br />
     <br />
@@ -36,6 +36,23 @@
       </div>
       <br />
       <button type="submit" value="submit">Submit</button>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </form>
   </div>
 </template>
